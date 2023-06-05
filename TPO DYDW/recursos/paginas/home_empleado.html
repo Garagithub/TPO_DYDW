@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Respuestas</title>
+  <title>Inicio</title>
   <!-- Enlace a la hoja de estilos de Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="text-center">Respuestas de la encuesta: [Título de la encuesta]</h1>
-    <ul class="list-group mt-4">
-      <!-- Aquí se generarían dinámicamente las respuestas de los empleados -->
-      <br>
+    <h1 class="text-center">Bienvenido(a) [Nombre del usuario]</h1>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h2>Encuestas pendientes:</h2>
+        <ul class="list-group" id="encuestasPendientes">
+          <!-- Aquí se generarían dinámicamente las encuestas pendientes -->
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="../paginas/encuestas.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Encuestas completadas:</h2>
+        <ul class="list-group" id="encuestasCompletadas">
+          <!-- Aquí se generarían dinámicamente las encuestas completadas -->
           <div class="card">
             <div class="card-header">
               Featured
@@ -32,30 +61,12 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <br>
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </ul>
+        </ul>
+      </div>
+    </div>
   </div>
   <!-- Inclusión de los scripts de Bootstrap y otras librerías JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="../java/scriptencuesta.js"></script>
 </body>
 </html>
