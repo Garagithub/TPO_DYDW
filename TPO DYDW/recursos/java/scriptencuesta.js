@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var encuestasCompletadas = document.getElementById("encuestasCompletadas");
   
         // Obtener el primer elemento de la lista de encuestas pendientes
-        var encuesta = encuestasPendientes.firstElementChild;
+        var encuesta = encuestasPendientes.querySelector(".card");
   
         if (encuesta) {
           // Mover la encuesta de la lista de encuestas pendientes a la lista de encuestas completadas
+          encuesta.remove();
           encuestasCompletadas.appendChild(encuesta);
         }
       }
-      
     });
   });
   
