@@ -4,10 +4,13 @@
   <title>Inicio</title>
   <!-- Enlace a la hoja de estilos de Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/Styles.css">
+
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="text-center">Bienvenido(a) [Nombre del usuario]</h1>
+    <h1 class="text-center">Bienvenido Empleado</h1>
+    <h2 class="text-center">aqui podra ver sus encuestas completadas y aquellas a completar</h2>
     <div class="row mt-5">
       <div class="col-md-6">
         <h2>Encuestas pendientes:</h2>
@@ -15,23 +18,12 @@
           <!-- Aquí se generarían dinámicamente las encuestas pendientes -->
           <div class="card">
             <div class="card-header">
-              Featured
+              Encuesta de satisfaccion
             </div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="../paginas/encuestas.html" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">satisfaccion con el equipo de trabajo</h5>
+              <p class="card-text">Responda con criterio cada pregunta </p>
+              <a href="../paginas/encuestas.html" class="btn btn-primary">Ir a la encuesta</a>
             </div>
           </div>
         </ul>
@@ -39,28 +31,86 @@
       <div class="col-md-6">
         <h2>Encuestas completadas:</h2>
         <ul class="list-group" id="encuestasCompletadas">
-          <!-- Aquí se generarían dinámicamente las encuestas completadas -->
           <div class="card">
             <div class="card-header">
-              Featured
+              Software <span class="arrow">&#x25BC;</span>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body" style="display: none;">
+              <h5 class="card-title">Herramientas utilizadas</h5>
+              <p class="card-text">realizaremos una encuesta sobre las herrmaientas que usas y te sientan comodas</p>
+              <ul>
+                <label for="pregunta1">Pregunta 1:¿Qué herramienta de control de versiones utilizas en el desarrollo de software?</label>
+                <li>Git</li>
+                <label for="pregunta2">Pregunta 2:¿Cuál es tu editor de código preferido?</label>
+                <li></li>
+                <label for="pregunta3">Pregunta 3:¿Qué herramienta utilizas para la gestión de proyectos y tareas?</label>
+                <li></li>
+                <label for="pregunta4">Pregunta 4: ¿Qué herramienta utilizas para la comunicación y colaboración en equipo?</label>
+                <li></li>
+                <label for="pregunta5">Pregunta 5: ¿Qué lenguaje de programación utilizas con mayor frecuencia?</label>
+                <li></li>
+                <label for="pregunta6">Pregunta 6: ¿Qué framework o biblioteca utilizas para el desarrollo web?</label>
+                <li>React</li>
+              </ul>
             </div>
           </div>
           <br>
           <div class="card">
             <div class="card-header">
-              Featured
+              Infraestructura <span class="arrow">&#x25BC;</span>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body" style="display: none;">
+              <h5 class="card-title">Evaluacion de las instalaciones</h5>
+              <p class="card-text">realizaremos una encuesta sobre las instalaciones de nuestra empresa</p>
+              <ul>
+                <label for="pregunta1">Pregunta 1:¿Cómo calificarías las instalaciones físicas de la empresa en términos de comodidad?</label>
+                <li>Respuesta:Muy cómodas</li>
+                <label for="pregunta2">Pregunta 2:¿Qué opinas sobre la calidad y el mantenimiento de las instalaciones?</label>
+                <li>Respuesta: Las instalaciones están bien mantenidas y la calidad es alta</li>
+                <label for="pregunta3">Pregunta 3: ¿Consideras que las instalaciones son seguras y cumplen con las normas de seguridad laboral?</label>
+                <li>Respuesta: Sí, las instalaciones son seguras y cumplen con las normas de seguridad laboral</li>
+                <label for="pregunta4">Pregunta 4: ¿Hay suficientes espacios para realizar tus tareas de manera efectiva?</label>
+                <li>Respuesta: Sí, hay suficientes espacios para realizar mis tareas de manera efectiva</li>
+                <label for="pregunta5">Pregunta 5: ¿Qué opinas sobre la disponibilidad y el mantenimiento de los equipos y herramientas de trabajo?</label>
+                <li>Respuesta: Los equipos y herramientas de trabajo están disponibles y se mantienen en buen estado</li>
+                <label for="pregunta6">Pregunta 6: ¿Existe un ambiente limpio y agradable en las instalaciones?</label>
+                <li>Respuesta: Sí, las instalaciones se mantienen limpias y ofrecen un ambiente agradable</li>
+              </ul>
             </div>
           </div>
+          <br>
+          <div class="card">
+            <div class="card-header">
+              Presencialidad <span class="arrow">&#x25BC;</span>
+            </div>
+            <div class="card-body" style="display: none;">
+              <h5 class="card-title">Modalidad del trabjao</h5>
+              <p class="card-text">realizaremos una encuesta sobre que modalidad prefieren nuestros empleados</p>
+              <ul>
+                <label for="pregunta1">Pregunta 1:¿Prefieres trabajar de manera presencial o remota?</label>
+                <li>En lo personal prefiero lo remoto pero si existe la posibilidad de un trabajo hibrido considero que es lo mejor</li>
+                <label for="pregunta2">Pregunta 2:¿Cuáles consideras son las ventajas del trabajo presencial?</label>
+                <li>Respuestas:
+                  Mayor interacción y comunicación con compañeros de trabajo.
+                  Mayor colaboración en equipo.
+                  Acceso directo a recursos y herramientas en el lugar de trabajo.</li>
+                <label for="pregunta3">Pregunta 3:¿Cuáles consideras son las ventajas del trabajo remoto?</label>
+                <li>Respuestas:
+                  Flexibilidad de horarios y ubicación.
+                  Ahorro de tiempo y dinero en desplazamientos.
+                  Mayor autonomía y capacidad de concentración.</li>
+                <label for="pregunta4">Pregunta 4: ¿Qué desafíos enfrentas al trabajar de manera remota?</label>
+                <li>Respuestas:
+                  Dificultad para separar el trabajo de la vida personal.
+                  Menor interacción social y sensación de aislamiento.
+                  Posibles dificultades en la comunicación y coordinación con el equipo.</li>
+            
+              </ul>
+            </div>
+          </div>
+        <br>
+        
+          <!-- Aquí se generarían dinámicamente las encuestas completadas -->
         </ul>
       </div>
     </div>
@@ -68,5 +118,57 @@
   <!-- Inclusión de los scripts de Bootstrap y otras librerías JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="../java/scriptencuesta.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+     $(document).ready(function() {
+      $('.arrow').click(function() {
+        $(this).closest('.card').find('.card-body').slideToggle();
+        $(this).toggleClass('arrow-rotated')});
+     });
+
+
+    $(document).ready(function() {
+      // Obtener los datos de la encuesta completada almacenados en localStorage
+      var encuestaCompletada = localStorage.getItem('encuestaCompletada');
+
+      if (encuestaCompletada) {
+        // Crear una nueva tarjeta con los datos de la encuesta completada
+        var nuevaTarjeta = document.createElement('div');
+        nuevaTarjeta.className = 'card';
+        nuevaTarjeta.innerHTML = encuestaCompletada;
+
+        // Agregar la nueva tarjeta a la lista de encuestas completadas
+        var encuestasCompletadas = document.getElementById('encuestasCompletadas');
+        encuestasCompletadas.appendChild(nuevaTarjeta);
+
+        // Limpiar los datos de la encuesta completada almacenados en localStorage
+        localStorage.removeItem('encuestaCompletada');
+      }
+      
+      ocultarEncuestaPendiente(); // Oculta la encuesta pendiente
+
+  // Obtener los datos de la encuesta completada almacenados en localStorage
+      var encuestaCompletada = localStorage.getItem('encuestaCompletada');
+
+      if (encuestaCompletada) {
+           // Crear una nueva tarjeta con los datos de la encuesta completada
+        var nuevaTarjeta = document.createElement('div');
+        nuevaTarjeta.className = 'card';
+        nuevaTarjeta.innerHTML = encuestaCompletada;
+
+    // Agregar la nueva tarjeta a la lista de encuestas completadas
+        var encuestasCompletadas = document.getElementById('encuestasCompletadas');
+        encuestasCompletadas.appendChild(nuevaTarjeta);
+
+    // Limpiar los datos de la encuesta completada almacenados en localStorage
+        localStorage.removeItem('encuestaCompletada');
+  }
+     
+    
+
+    
+});
+
+  </script>
 </body>
 </html>

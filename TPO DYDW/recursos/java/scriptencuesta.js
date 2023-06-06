@@ -24,5 +24,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
     });
+
+    function ocultarEncuestaPendiente() {
+      // Obtén la lista de encuestas pendientes
+      var encuestasPendientes = document.getElementById('encuestasPendientes');
+    
+      // Elimina la tarjeta de la encuesta pendiente si existe
+      var encuestaPendiente = encuestasPendientes.querySelector('.card');
+      if (encuestaPendiente) {
+        encuestaPendiente.remove();
+      }
+    }
+    
   });
   

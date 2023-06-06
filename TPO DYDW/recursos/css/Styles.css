@@ -20,3 +20,10 @@ height: 100%;
     width: 500px;
 
 }
+.arrow {
+    float: right;
+  }
+  .card-body.collapsed {
+    display: none;
+  }
+  
