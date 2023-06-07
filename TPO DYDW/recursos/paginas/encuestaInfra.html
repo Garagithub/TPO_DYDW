@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encuesta de satisfaccion</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Encuesta: infraestructura de la empresa</h1>
+      <form class="mt-4" id="encuestaForm">
+        <!-- Aquí se generarían dinámicamente las preguntas de la encuesta -->
+        <div class="form-group">
+          <label for="pregunta1"
+            >¿Cómo calificarías las instalaciones físicas de la empresa en
+            términos de comodidad?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta1"
+            name="pregunta1"
+            value="Muy cómodas"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pregunta2"
+            >¿Qué opinas sobre la calidad y el mantenimiento de las
+            instalaciones?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta2"
+            name="pregunta2"
+            value="Las instalaciones están bien mantenidas y la calidad es alta"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pregunta3"
+            >¿Consideras que las instalaciones son seguras y cumplen con las
+            normas de seguridad laboral?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta3"
+            name="pregunta3"
+            value="Sí, las instalaciones son seguras y cumplen con las normas de seguridad laboral"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pregunta4"
+            >¿Hay suficientes espacios para realizar tus tareas de manera
+            efectiva?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta4"
+            name="pregunta4"
+            value="Sí, hay suficientes espacios para realizar mis tareas de manera efectiva"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pregunta5"
+            >¿Qué opinas sobre la disponibilidad y el mantenimiento de los
+            equipos y herramientas de trabajo?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta5"
+            name="pregunta5"
+            value="Los equipos y herramientas de trabajo están disponibles y se mantienen en buen estado"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pregunta6"
+            >¿Existe un ambiente limpio y agradable en las instalaciones?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="pregunta6"
+            name="pregunta6"
+            value="Sí, las instalaciones se mantienen limpias y ofrecen un ambiente agradable"
+            disabled
+          />
+        </div>
+        <a href="javascript:history.go(-1)" class="btn btn-primary btn-block"
+          >Volver</a
+        >
+      </form>
+    </div>
+    <!-- Inclusión de los scripts de Bootstrap y otras librerías JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../js/scriptencuesta2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Escuchar el evento de envío del formulario
+        $("#encuestaForm").submit(function (e) {
+          window.location.href = "home_empleado.html";
+        });
+      });
+    </script>
+  </body>
+</html>
