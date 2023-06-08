@@ -39,7 +39,7 @@ footer {
   color: #fff; /* Color del texto del footer */
   padding: 20px; /* Espaciado interno del footer */
   text-align: center; /* Alineación del texto al centro */
-  min-height: 100vh;
+  min-height: 34vh;
 }
 header{
   background-color: #343a40; /* Color de fondo del footer */

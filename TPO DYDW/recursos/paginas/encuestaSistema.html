@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../css/Styles.css" />
   </head>
   <body class="mybody">
     <div class="container mt-5">
@@ -89,15 +90,15 @@
 
           // Crear la tarjeta con los datos de la encuesta completada
           var nuevaTarjeta = `
-          <br>
-          <div class="card">
-            <div class="card-header">
+          <br />
+          <div class="card my-2 bg-dark">
+            <div class="card-header text-success">
               Encuesta de satisfaccion completada
             </div>
             <div class="card-body">
-              <h5 class="card-title">Satisfaccion con el equipo de trabajo</h5>
-              <p class="card-text">Respuestas:</p>
-              <ul>
+              <h5 class="card-title text-light">Satisfaccion con el equipo de trabajo</h5>
+              <p class="card-text text-light">Respuestas:</p>
+              <ul class=" text-light">
                 <label for="pregunta1">Pregunta 1: ¿Le parece facil de usar el sistema de la empresa?</label>
                 <li>${pregunta1}</li>
                 <label for="pregunta2">Pregunta 2: ¿Que le mejoraria?</label>
@@ -111,6 +112,8 @@
               </ul>
             </div>
           </div>
+       
+           
         `;
 
           // Almacenar la tarjeta en localStorage
