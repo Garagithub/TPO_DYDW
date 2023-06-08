@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head >
+  <head>
     <title>Inicio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+
     <!-- Enlace a la hoja de estilos de Bootstrap -->
     <link
       rel="stylesheet"
@@ -9,15 +14,15 @@
     />
     <link rel="stylesheet" href="../css/Styles.css" />
   </head>
-  <header><h1 class="text-center">Bienvenido Empleado</h1> </header>
+  <header>
+    <h1 class="text-center">Bienvenido Empleado</h1>
+  </header>
   <body class="mybody">
     <div class="container mt-5">
-   <!--   <h1 class="text-center">Bienvenido Empleado</h1>--> 
       <div class="row mt-5">
         <div class="col-md-6">
           <h2 class="text-center">Encuestas pendientes</h2>
           <ul class="list-group" id="encuestasPendientes">
-            <!-- Aquí se generarían dinámicamente las encuestas pendientes -->
             <div class="card my-2 bg-dark">
               <div class="card-header text-light">Encuesta de Sistema</div>
               <div class="card-body">
@@ -28,7 +33,6 @@
                 >
               </div>
             </div>
-            <br />
             <div class="card my-2 bg-dark">
               <div class="card-header text-light">Encuesta de Software</div>
               <div class="card-body">
@@ -58,7 +62,6 @@
                 >
               </div>
             </div>
-            <br />
             <div class="card my-2 bg-dark">
               <div class="card-header text-light">
                 Encuesta de Presencialidad
@@ -73,7 +76,6 @@
                 >
               </div>
             </div>
-            <!-- Aquí se generarían dinámicamente las encuestas completadas -->
           </ul>
         </div>
       </div>
@@ -82,61 +84,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="../js/scriptencuesta.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".arrow").click(function () {
-          $(this).closest(".card").find(".card-body").slideToggle();
-          $(this).toggleClass("arrow-rotated");
-        });
-      });
-
-      $(document).ready(function () {
-        // Obtener los datos de la encuesta completada almacenados en localStorage
-        var encuestaCompletada = localStorage.getItem("encuestaCompletada");
-
-        if (encuestaCompletada) {
-          // Crear una nueva tarjeta con los datos de la encuesta completada
-          var nuevaTarjeta = document.createElement("div");
-          nuevaTarjeta.className = "card";
-          nuevaTarjeta.innerHTML = encuestaCompletada;
-
-          // Agregar la nueva tarjeta a la lista de encuestas completadas
-          var encuestasCompletadas = document.getElementById(
-            "encuestasCompletadas"
-          );
-          encuestasCompletadas.appendChild(nuevaTarjeta);
-
-          // Limpiar los datos de la encuesta completada almacenados en localStorage
-          localStorage.removeItem("encuestaCompletada");
-        }
-
-        ocultarEncuestaPendiente(); // Oculta la encuesta pendiente
-
-        // Obtener los datos de la encuesta completada almacenados en localStorage
-        var encuestaCompletada = localStorage.getItem("encuestaCompletada");
-
-        if (encuestaCompletada) {
-          // Crear una nueva tarjeta con los datos de la encuesta completada
-          var nuevaTarjeta = document.createElement("div");
-          nuevaTarjeta.className = "card";
-          nuevaTarjeta.innerHTML = encuestaCompletada;
-
-          // Agregar la nueva tarjeta a la lista de encuestas completadas
-          var encuestasCompletadas = document.getElementById(
-            "encuestasCompletadas"
-          );
-          encuestasCompletadas.appendChild(nuevaTarjeta);
-
-          // Limpiar los datos de la encuesta completada almacenados en localStorage
-          localStorage.removeItem("encuestaCompletada");
-        }
-      });
-    </script>
   </body>
   <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    </ul>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
     <p class="text-center text-muted">© 2022 Encustas Company, Inc</p>
   </footer>
-
 </html>

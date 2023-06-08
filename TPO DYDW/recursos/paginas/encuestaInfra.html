@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Encuesta de satisfaccion</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
     <!-- Enlace a la hoja de estilos de Bootstrap -->
     <link
       rel="stylesheet"
@@ -13,7 +17,6 @@
     <div class="container mt-5">
       <h1 class="text-center">Encuesta: infraestructura de la empresa</h1>
       <form class="mt-4" id="encuestaForm">
-        
         <div class="form-group">
           <label for="pregunta1"
             >¿Cómo calificarías las instalaciones físicas de la empresa en
@@ -102,13 +105,12 @@
         >
       </form>
     </div>
-    
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="../js/scriptencuesta2.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        
         $("#encuestaForm").submit(function (e) {
           window.location.href = "home_empleado.html";
         });
