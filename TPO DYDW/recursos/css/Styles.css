@@ -27,3 +27,23 @@ height: 100%;
     display: none;
   }
   
+.mybody{
+  background-image:url("../imagenes/fondo-onda-blanca-suave_52683-55288.avif");
+  /*url("../imagenes/fondos.webp")*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #343a40; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  padding: 20px; /* Espaciado interno del footer */
+  text-align: center; /* Alineación del texto al centro */
+  min-height: 100vh;
+}
+header{
+  background-color: #343a40; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  padding: 20px; /* Espaciado interno del footer */
+  text-align: center; /* Alineación del texto al centro */
+}
