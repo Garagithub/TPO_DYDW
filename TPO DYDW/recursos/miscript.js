@@ -31,10 +31,10 @@ var users = [
       // Verificar el valor del rol y redirigir según corresponda
       if (selectedRole === 'employee') {
         // Redirigir a la página de empleado
-        window.location.href = "../paginas/home_empleado.html";
+        window.location.href = "home_empleado.html";
       } else if (selectedRole === 'coordinator') {
         // Redirigir a la página de coordinador
-        window.location.href = '../paginas/home_coordinador.html';
+        window.location.href = 'home_coordinador.html';
       } else {
         // Manejar cualquier otro caso o mostrar un mensaje de error
         console.log('Rol no válido');

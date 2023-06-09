@@ -11,19 +11,16 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../css/Styles.css" />
+    <link rel="stylesheet" href="./Styles.css" />
   </head>
   <body class="mybody">
     <div class="container mt-5">
-      <h1 class="text-center">
-        Encuesta: software de desarrollo de la empresa
-      </h1>
+      <h1 class="text-center">Encuesta: sistema de la empresa</h1>
       <form class="mt-4" id="encuestaForm">
         <!-- Aquí se generarían dinámicamente las preguntas de la encuesta -->
         <div class="form-group">
           <label for="pregunta1"
-            >¿Qué herramienta de control de versiones utilizas en el desarrollo
-            de software?</label
+            >¿Le parece facil de usar el sistema de la empresa?</label
           >
           <input
             type="text"
@@ -33,7 +30,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="pregunta2">¿Cuál es tu editor de código preferido?</label>
+          <label for="pregunta2">¿Que le mejoraria?</label>
           <input
             type="text"
             class="form-control"
@@ -43,8 +40,7 @@
         </div>
         <div class="form-group">
           <label for="pregunta3"
-            >¿Qué herramienta utilizas para la gestión de proyectos y
-            tareas?</label
+            >¿Cree que tiene una buena UX cuando la usa?</label
           >
           <input
             type="text"
@@ -55,8 +51,7 @@
         </div>
         <div class="form-group">
           <label for="pregunta4"
-            >¿Qué herramienta utilizas para la comunicación y colaboración en
-            equipo?</label
+            >¿Le parece que se puede integrar con otros sistemas?</label
           >
           <input
             type="text"
@@ -66,9 +61,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="pregunta5"
-            >¿Qué lenguaje de programación utilizas con mayor frecuencia?</label
-          >
+          <label for="pregunta5">¿Del 1 al 10 califique el sistema?</label>
           <input
             type="text"
             class="form-control"
@@ -88,7 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        // Escuchar el evento de envío del formulario
         $("#encuestaForm").submit(function (e) {
           e.preventDefault();
 
@@ -110,18 +102,15 @@
               <h5 class="card-title text-light">Satisfaccion con el equipo de trabajo</h5>
               <p class="card-text text-light">Respuestas:</p>
               <ul class=" text-light">
-                <label for="pregunta1">Pregunta 1: ¿Qué herramienta de control de versiones utilizas en el desarrollo
-            de software?</label>
+                <label for="pregunta1">Pregunta 1: ¿Le parece facil de usar el sistema de la empresa?</label>
                 <li>${pregunta1}</li>
-                <label for="pregunta2">Pregunta 2: ¿Cuál es tu editor de código preferido?</label>
+                <label for="pregunta2">Pregunta 2: ¿Que le mejoraria?</label>
                 <li>${pregunta2}</li>
-                <label for="pregunta3">Pregunta 3: ¿Qué herramienta utilizas para la gestión de proyectos y
-            tareas?</label>
+                <label for="pregunta3">Pregunta 3: ¿Cree que tiene una buena UX cuando la usa?</label>
                 <li>${pregunta3}</li>
-                <label for="pregunta4">Pregunta 4: ¿Qué herramienta utilizas para la comunicación y colaboración en
-            equipo?</label>
+                <label for="pregunta4">Pregunta 4: ¿Le parece que se puede integrar con otros sistemas?</label>
                 <li>${pregunta4}</li>
-                <label for="pregunta5">Pregunta 5: ¿Qué lenguaje de programación utilizas con mayor frecuencia?</label>
+                <label for="pregunta5">Pregunta 5: ¿Del 1 al 10 califique el sistema?</label>
                 <li>${pregunta5}</li>
               </ul>
             </div>
